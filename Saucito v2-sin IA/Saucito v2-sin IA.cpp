@@ -83,6 +83,15 @@ struct Token {
     std::string texto;
 };
 
+void limpiarConsola() {
+    #ifdef _WIN32
+        // Comando para Windows
+        system("cls");
+    #else
+        // Comando para Linux, macOS y Termux
+        system("clear");
+    #endif
+}
 
 /*El lexer*/
 class Lexer {
