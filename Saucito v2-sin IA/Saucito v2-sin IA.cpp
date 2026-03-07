@@ -75,7 +75,8 @@ enum TipoToken {
     TRIANGULO,
     VOMITOAZUCAR,
     POSCICION,
-    AYUDA
+    AYUDA,
+    USAR
 };
 
 struct Token {
@@ -171,9 +172,9 @@ private:
         if (resultado == "leer") return { LEER, resultado };
         if (resultado == "escribir") return { ESCRIBIR, resultado };
         if (resultado == "ventana") return{ VENTANA,resultado };
-        if (resultado == "ayuda") return{ AYUDA };
+        if (resultado == "ayuda") return{ AYUDA ,resultado};
         if (resultado == "vomito_azucar") return{ VOMITOAZUCAR,resultado };
-
+        if (resultado == "usar") return { USAR,resultado };
 
 
         return { ID, resultado }; // Si no es reserva, es un ID (nombre de variable)
@@ -266,7 +267,9 @@ private:
             }
         }
         // Dentro de la clase Parser, en el bloque else if (actualToken().tipo == LEER)
-        else if (actualToken().tipo == LEER) {
+else if (actualToken().tipo == USAR) {}
+        
+else if (actualToken().tipo == LEER) {
             consumir(LEER); // ¡No olvides consumir el token!
             std::string valor;
             std::cout << "Leyendo valor (escribelo en la consola): ";
