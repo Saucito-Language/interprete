@@ -293,7 +293,7 @@ private:
 
 int main() {
     // 1. Quitamos el while(!WindowShouldClose()) de aquí arriba.
-    system("clear");    
+    limpiarConsola();    
     std::string n;
     std::cout << "Que tal iniciaste saucito." << std::endl;
     std::cout << "Escribe el codigo a analizar : " << std::endl;
