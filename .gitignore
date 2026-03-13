@@ -1,0 +1,23 @@
+# Compilación y binarios
+Debug/
+Release/
+x64/
+x86/
+*.exe
+*.obj
+*.pdb
+*.ilk
+
+# Archivos de configuración de Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# Archivos temporales de CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeSettings.json
+
+# Librerías y temporales del actualizador
+update_temp.exe
