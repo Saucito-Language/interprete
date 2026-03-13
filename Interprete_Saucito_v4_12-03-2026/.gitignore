@@ -1,0 +1,11 @@
+# 1. Ignorar todo
+*
+
+# 2. Permitir SOLO archivos específicos
+!lexer.h
+!parser.h
+!ejecutor.h
+!descargador.cpp
+!Interprete_Saucito_v4_12-03-2026.cpp
+!codigo.sau
+!.gitignore

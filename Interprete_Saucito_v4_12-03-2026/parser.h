@@ -3,7 +3,7 @@
 #include <vector>
 #include <iostream>
 #include "lexer.h"
-#include "EJECUTOR.h"
+#include "ejecutor.h"
 
 class Parser {
     std::vector<Token> tokens;
