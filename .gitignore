@@ -1,6 +1,7 @@
 # Compilación y binarios
 Debug/
 Release/
+bin/
 x64/
 x86/
 *.exe
