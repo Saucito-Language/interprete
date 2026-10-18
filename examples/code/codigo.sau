@@ -1,0 +1,6 @@
+escribir_texto "Hola Mundo",
+x = 200,
+y = 150,
+escritorio mi_archivo, 100, 400,
+ventana,
+vomito_azucar
